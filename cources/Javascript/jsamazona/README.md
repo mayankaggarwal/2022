@@ -51,6 +51,7 @@ https://www.youtube.com/watch?v=N3FDyheHVMM
    8. build parsedUrl and compare with routes
    9. if route exists render it, else render Error404
    10. create screens/Error404.js and render error message
+       ----------------------------done------------------------------
 6. Create Node.JS Server
    1. run npm init in root jsamazona folder
    2. npm install express
