@@ -51,7 +51,6 @@ https://www.youtube.com/watch?v=N3FDyheHVMM
    8. build parsedUrl and compare with routes
    9. if route exists render it, else render Error404
    10. create screens/Error404.js and render error message
-       ----------------------------done------------------------------
 6. Create Node.JS Server
    1. run npm init in root jsamazona folder
    2. npm install express
@@ -103,6 +102,7 @@ https://www.youtube.com/watch?v=N3FDyheHVMM
     2. ES7 React/Redux/GraphQL/React-Native snippets
     3. Prettier - Code formatter
     4. HTML&LESS grammar injections
+       ----------------------------done------------------------------
 12. Create Rating Component
     1. create components/Rating.js
     2. link to fontawesome.css in index.html
