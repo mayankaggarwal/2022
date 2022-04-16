@@ -1,22 +1,27 @@
-import HomeScreen from "./screens/HomeScreen.js";
-import ProductScreen from "./screens/ProductScreen.js";
-import Error404Screen from "./screens/Error404Screen.js";
-import {parseRequestUrl} from './utils.js';
+/* eslint-disable import/extensions */
+import HomeScreen from './screens/HomeScreen.js';
+import ProductScreen from './screens/ProductScreen.js';
+import Error404Screen from './screens/Error404Screen.js';
+import { parseRequestUrl } from './utils.js';
+import CartScreen from './screens/CartScreen.js';
+
 const routes = {
-  "/":HomeScreen,
-  "/product/:id":ProductScreen,
-}
+  '/': HomeScreen,
+  '/product/:id': ProductScreen,
+  '/cart/:id': CartScreen,
+  '/cart': CartScreen,
+};
 
 const router = async () => {
   const request = parseRequestUrl();
-  const parseUrl = 
-    (request.resource ? `/${request.resource}` : '/') + 
-    (request.id? '/:id': '') + 
-    (request.verb ? `/${request.verb}` : '');
+  const parseUrl = (request.resource ? `/${request.resource}` : '/')
+    + (request.id ? '/:id' : '')
+    + (request.verb ? `/${request.verb}` : '');
   const screen = routes[parseUrl] ? routes[parseUrl] : Error404Screen;
-  const main = document.getElementById("main-container");
+  const main = document.getElementById('main-container');
   main.innerHTML = await screen.render();
+  await screen.after_render();
 };
 
-window.addEventListener('load',router);
+window.addEventListener('load', router);
 window.addEventListener('hashchange', router);

@@ -113,7 +113,6 @@ https://www.youtube.com/watch?v=N3FDyheHVMM
     8. style div.rating, span and last span
     9. Edit HomeScreen
     10. Add div.product-rating and use Rating component
-        ----------------------------done------------------------------
 13. Product Screen
     1. get product id from request
     2. implement /api/product/:id api
@@ -141,6 +140,7 @@ https://www.youtube.com/watch?v=N3FDyheHVMM
     7. if existItem update qty
     8. else add item
     9. setCartItems
+       ----------------------------done------------------------------
 17. Cart Screen UI
     1. cartItems = getCartItems()
     2. create 2 columns for cart items and cart action
