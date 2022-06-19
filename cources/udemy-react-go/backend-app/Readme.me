@@ -1,0 +1,36 @@
+Notes
+1. go mod init backend -> This commands creates go.mod file
+2. flag package is an inbuilt package which is used to read from command line by calling flag.Parse()
+3. fmt is also an inbuilt package
+4. Install httprouter
+5. Create files routes.go and statusHandler.go
+6. In order to share data between various files weither we can use global variables or go's receiver's
+7. Logger can be created using logger:= log.New(os.Stdout,"",log.Ldate|log.Ltime)
+8. Since we have multiple go files run it using go run ./cmd/api/.
+9. Create new package to hold the models with name models.go
+10. Create API's to get movies by Id 
+11. download package to connect to postgres go get -u github.com/lib/pq@v1.10.0
+12. run postgres container docker run --name postgres12 -p 5432:5432 -e POSTGRES_USER=root -e POSTGRES_PASSWORD=secret -d postgres:12-alpine
+13. C:\Users\Inspiron\AppData\Local\Programs\pgAdmin 4\v6\runtime\psql -d go_movies -f G:\2022\cources\udemy-react-go\backend-app\go_movies.sql -U root
+
+
+
+commands
+go mod init backend 
+go run cmd/api/main.go
+go run ./cmd/api/.
+
+Packages
+1. flag -> 
+2. fmt => fmt.Println, Fprint, Sprintf
+3. net/http => HandleFunc, ListenAndServe
+4. log -> Println
+5. json -> MarchalIndent(type, prefix, howtoIndent)
+6. httprouter  (https://github.com/julienschmidt/httprouter -> go get -u github.com/julienschmidt/httprouter) 
+  HandlerFunc
+  ParamsFromContext
+7. os
+8. time
+9. strconv
+  Atoi equivalent to parse init
+10. errors
