@@ -41,7 +41,7 @@ func main() {
 
 	flag.IntVar(&cfg.port, "port", 4000, "Server port to listen on")
 	flag.StringVar(&cfg.env, "env", "development", "Application environment (development|production")
-	flag.StringVar(&cfg.db.dsn, "dsn", "postgres://root:secret@localhost/go_movies?sslmode=disable", "Postgres Connection String")
+	flag.StringVar(&cfg.db.dsn, "dsn", "postgres://root:secret@localhost/go_movies1?sslmode=disable", "Postgres Connection String")
 	flag.Parse()
 
 	logger := log.New(os.Stdout, "", log.Ldate|log.Ltime)
