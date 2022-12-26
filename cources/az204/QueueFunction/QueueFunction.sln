@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33205.214
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QueueFunction", "QueueFunction\QueueFunction.csproj", "{500FA962-95F5-44F4-AE54-BA54AAF6EBBE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{500FA962-95F5-44F4-AE54-BA54AAF6EBBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{500FA962-95F5-44F4-AE54-BA54AAF6EBBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{500FA962-95F5-44F4-AE54-BA54AAF6EBBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{500FA962-95F5-44F4-AE54-BA54AAF6EBBE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4AA22285-1614-4D3A-9405-CD9639778477}
+	EndGlobalSection
+EndGlobal
