@@ -4,7 +4,7 @@ using AzureServiceBusQueue;
 using Newtonsoft.Json;
 
 Console.WriteLine("Hello, World!");
-string connectionString = "";
+var connectionString = Environment.GetEnvironmentVariable("azQueueConnectionString");
 string queueName = "appqueue";
 
 string deadLetter_connectionString = $"{connectionString}/$DeadLetterQueue";
@@ -23,7 +23,7 @@ var orders = new List<Order>()
 //await PeekMessages1();
 //await ReceiveMessages();
 //await GetProperties();
-//await SendMessagesWithCustomProperties(orders);
+await SendMessagesWithCustomProperties(orders);
 //await ServiceBusProcessor();
 //await PeekMessage();
 //await DeadLetter_ReceiveMessages();
